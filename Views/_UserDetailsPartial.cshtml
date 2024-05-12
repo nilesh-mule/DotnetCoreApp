@@ -1,0 +1,23 @@
+﻿@model ApplicationUser
+
+@if (Model != null)
+{
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Password</th>
+            <th>PhoneNumber</th>
+            <th>EmailConfirmed</th>
+        </tr>
+        <tr>
+            <td>@Model.Email</td>
+            <td>@Model.Password</td>
+            <td>@Model.PhoneNumber</td>
+            <td>@Model.EmailConfirmed</td>
+        </tr>
+    </table>
+}
+else
+{
+    <p>User not found</p>
+}
